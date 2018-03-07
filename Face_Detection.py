@@ -37,8 +37,8 @@ for file in glob.glob("*.jpg"):
             files = {'image': (img_path, open(dir_path + img_path, 'rb'), 'image/jpg', {'Expires': '0'})}
 
             headers = {
-                'app_id': "7cadde8e",
-                'app_key': "89e61956e2637a917a0b8b18c4f9a361",
+                'app_id': "xxxxxx",
+                'app_key': "xxxxxxxxxxxxxx",
             }
 
             res = requests.post('https://api.kairos.com/detect', headers=headers, files=files)
